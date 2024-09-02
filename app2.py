@@ -109,5 +109,7 @@ def webhook():
     else:
         return jsonify({"fulfillmentText": "Sorry, I didn't understand that intent."})
 
+return render_template('index.html')
+
 if __name__ == '__main__':
     app.run(debug=True, ssl_context=('cert.pem', 'key.pem'))
